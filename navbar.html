@@ -1,0 +1,33 @@
+<div class="navbar navbar-default navbar-fixed-top bg-black" role="navigation">
+	<div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header"></div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a ui-sref="index">home</a></li>
+				
+				<li>
+					<a ui-sref="marketplace">
+						<i class="glyphicon glyphicon-th-large icon text-success"></i>
+						<span class="font-bold">Marketplace</span>
+					</a>
+				</li>
+
+				<li><a ui-sref="networking">networking</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right ">
+				<li class="dropdown">
+					<a id="dLabel" role="button" data-toggle="dropdown" data-target="#">
+						<span class="glyphicon glyphicon-user"></span>
+						<span class="glyphicon-class"></span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				        <li><a ui-sref="login" ng-click="cc.isLoggedIn = 0">logout</a></li>
+				    </ul>
+				</li>	      
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>	
+</div>	    
+	
